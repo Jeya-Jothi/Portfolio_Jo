@@ -18,7 +18,7 @@ export default function SideNavBox({ activeSection, setActiveSection }) {
         <div>
           {/* Image */}
           <div className="flex justify-center">
-            <div className="relative h-30 lg:h-40 xl:h-50 2xl:h-65 w-full group">
+            <div className="relative h-40 lg:h-50 xl:h-55 2xl:h-65 w-full group">
               {/* Normal Image */}
               <img
                 src={JothiPhoto}

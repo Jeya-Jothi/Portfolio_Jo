@@ -12,20 +12,20 @@ export default function ProjectSection({ gitLink, liveLink, onGallery }) {
   const [selectedProject, setSelectedProject] = useState(null);
 
   return (
-    <section className="px-4 md:px-8 lg:px-12 py-20 mx-5 xl:mx-20 selection:bg-(--color1) selection:text-white">
+    <section className="p-5 md:p-10 lg:p-15 2xl:px-25 selection:bg-(--color1) selection:text-white">
       {/* Page Title */}
-      <div className="mb-20 flex justify-center flex-col items-center">
-        <h2 className="text-2xl md:text-4xl font-bold text-gray-900">
+      <div className="mb-10 lg:mb-20 flex justify-center flex-col items-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
           My <span className="text-(--color1)">Projects</span>
         </h2>
-        <p className="text-gray-600 mt-4 text-xl">
+        <p className="text-gray-600 mt-4 text-sm text-center xl:text-xl">
           A collection of projects that showcase my skills in frontend
           development, UI design, and problem-solving.
         </p>
       </div>
 
       {/* Projects Grid */}
-      <div className="grid gap-8 xl:gap-20 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
+      <div className="grid gap-8 xl:gap-12 2xl:gap-20 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 px-5 lg:px-0">
         {reverseProjects.map((project) => (
           <div
             key={project.id}
@@ -53,7 +53,7 @@ export default function ProjectSection({ gitLink, liveLink, onGallery }) {
             </div>
 
             {/* Tech Stack */}
-            <div className="flex justify-between border-t pt-5 border-t-pink-100">
+            <div className="flex justify-between gap-3 border-t pt-5 border-t-pink-100">
               <div className="flex flex-wrap gap-2">
                 {project.tech.map((item, index) => (
                   <span

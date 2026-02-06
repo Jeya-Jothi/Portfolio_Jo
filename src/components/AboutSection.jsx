@@ -37,7 +37,7 @@ function MobileIntro() {
       <div className="flex flex-col justify-center items-center gap-1">
         <div className="flex items-center justify-center">
           <p className="text-sm">Hi...</p>
-          <img src={HiIcon} alt="Hi icon" className="w-4 h-3" />
+          <img src={HiIcon} alt="Hi icon" className="w-4 h-3 mb-1" />
         </div>
         <p className="text-2xl text-center">
           I'm <span className="text-(--color1) font-bold">Jeya Jothi</span>
