@@ -6,6 +6,8 @@ import MailIcon from "../assets/icons/mail icon.png";
 import illustration from "../assets/image/laptop.webp";
 import JothiPhotoWhite from "../assets/image/jothi-photo-white.jpg";
 
+import SkillsMarquee from "./SkillsMarquee";
+
 import interests from "../data/interests";
 
 function Tooltip({ text }) {
@@ -37,10 +39,10 @@ function MobileIntro() {
           <p className="text-sm">Hi...</p>
           <img src={HiIcon} alt="Hi icon" className="w-4 h-3" />
         </div>
-        <p className="text-2xl">
+        <p className="text-2xl text-center">
           I'm <span className="text-(--color1) font-bold">Jeya Jothi</span>
         </p>
-        <p className="text-sm">Frontend Developer</p>
+        <p className="text-sm text-center">Frontend Developer</p>
       </div>
     </div>
   );
@@ -54,6 +56,7 @@ export default function AboutSection() {
           <MobileIntro />
         </div>
 
+        {/* Header */}
         <div className="hidden md:flex flex-col items-center">
           <div className="flex items-center gap-1">
             <p className="text-base lg:text-xl">Hi...</p>
@@ -102,6 +105,7 @@ export default function AboutSection() {
             </div>
           </div>
         </div>
+
         {/* About me content */}
         <div className="flex flex-col gap-5">
           <div className="flex items-center gap-2 lg:gap-5">
@@ -159,6 +163,15 @@ export default function AboutSection() {
               </p>
             </div>
           </div>
+        </div>
+
+        {/* Skills */}
+        <div className="flex flex-col gap-5">
+          <div className="flex items-center gap-2 lg:gap-5">
+            <div className="w-2 h-10 lg:h-15 animate-ink-flow rounded-2xl"></div>
+            <h3 className="text-2xl lg:text-4xl font-bold">Skills</h3>
+          </div>
+          <SkillsMarquee />
         </div>
 
         {/* Interests */}

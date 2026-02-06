@@ -61,3 +61,29 @@
 .gallery-swiper .swiper-pagination-bullet-active {
   background-color: #d10034b9;
 }
+
+/* ===== Seamless Skills Marquee ===== */
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee-inner {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 25s linear infinite;
+}
+
+.marquee-inner:hover {
+  animation-play-state: paused;
+}

@@ -79,7 +79,7 @@ export default function SideNavBox({ activeSection, setActiveSection }) {
 
         <div className="flex items-center justify-between">
           <img src={JothiLogo} alt="Logo" className="w-10 h-10" />
-          <p className="text-xs lg:text-sm text-gray-500">
+          <p className="text-xs xl:text-sm text-gray-500 text-right">
             &copy; {new Date().getFullYear()} | All rights reserved
           </p>
         </div>
