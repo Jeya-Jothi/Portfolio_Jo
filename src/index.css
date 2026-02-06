@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+html {
+  overflow-y: scroll;
+}
+
+/* Utility font class */
+* {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+:root {
+  --color1: #d10034b9;
+}
+
+@keyframes pulseColorVar {
+  0% {
+    background-color: color-mix(in srgb, var(--color1) 40%, white);
+  }
+  50% {
+    background-color: var(--color1);
+  }
+  100% {
+    background-color: color-mix(in srgb, var(--color1) 40%, white);
+  }
+}
+
+.animate-color-pulse {
+  animation: pulseColorVar 2.5s ease-in-out infinite;
+}
+
+@keyframes inkFlow {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 0% 200%;
+  }
+}
+
+.animate-ink-flow {
+  background: linear-gradient(
+    to bottom,
+    color-mix(in srgb, var(--color1) 80%, white),
+    color-mix(in srgb, var(--color1) 50%, white),
+    color-mix(in srgb, var(--color1) 15%, white),
+    color-mix(in srgb, var(--color1) 50%, white),
+    color-mix(in srgb, var(--color1) 80%, white)
+  );
+  background-size: 100% 200%;
+  animation: inkFlow 5s ease-in-out infinite;
+}
+
+.gallery-swiper .swiper-pagination {
+  bottom: -5px !important; /* increase/decrease as needed */
+}
+
+.gallery-swiper .swiper-pagination-bullet {
+  background-color: #c0294fb9;
+}
+
+.gallery-swiper .swiper-pagination-bullet-active {
+  background-color: #d10034b9;
+}
