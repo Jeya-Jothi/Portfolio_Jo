@@ -21,7 +21,7 @@ export default function Home() {
   }, [activeSection]);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-[20%_75%] xl:grid-cols-[15%_85%] justify-between mx-2">
+    <div className="grid grid-cols-1 md:grid-cols-[20%_75%] xl:grid-cols-[15%_85%] justify-between h-screen">
       <SideNavBox
         activeSection={activeSection}
         setActiveSection={setActiveSection}
@@ -46,7 +46,7 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.4, ease: "easeInOut" }}
-              className="w-full"
+              className="w-full overflow-y-scroll"
             >
               {activeSection === "about" && <AboutSection />}
               {activeSection === "projects" && <ProjectSection />}

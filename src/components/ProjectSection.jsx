@@ -12,7 +12,7 @@ export default function ProjectSection({ gitLink, liveLink, onGallery }) {
   const [selectedProject, setSelectedProject] = useState(null);
 
   return (
-    <section className="px-4 md:px-8 lg:px-12 py-20 mx-5 xl:mx-20">
+    <section className="px-4 md:px-8 lg:px-12 py-20 mx-5 xl:mx-20 selection:bg-(--color1) selection:text-white">
       {/* Page Title */}
       <div className="mb-20 flex justify-center flex-col items-center">
         <h2 className="text-2xl md:text-4xl font-bold text-gray-900">

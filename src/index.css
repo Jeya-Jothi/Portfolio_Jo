@@ -1,9 +1,5 @@
 @import "tailwindcss";
 
-html {
-  overflow-y: scroll;
-}
-
 /* Utility font class */
 * {
   font-family: "Red Hat Display", sans-serif;
