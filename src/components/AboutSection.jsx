@@ -130,8 +130,8 @@ export default function AboutSection() {
                 user-friendly web experiences. I come from an Electronics and
                 Communication Engineering background, but my curiosity for
                 building things on the web led me into frontend development.
-                Over time, I’ve gained hands-on experience through a 6-month
-                internship and{" "}
+                Over time, I’ve gained hands-on experience through an internship
+                and{" "}
                 <span className="font-bold"> multiple real-world projects</span>
                 , where I worked with{" "}
                 <span className="font-bold text-(--color1)">
