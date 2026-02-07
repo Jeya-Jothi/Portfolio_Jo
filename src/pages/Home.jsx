@@ -21,7 +21,7 @@ export default function Home() {
   }, [activeSection]);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-[25%_75%] xl:grid-cols-[18%_85%] 2xl:grid-cols-[15%_85%] justify-between h-screen">
+    <div className="grid grid-cols-1 md:grid-cols-[25%_75%] xl:grid-cols-[18%_85%] 2xl:grid-cols-[15%_85%] justify-between h-screen selection:bg-(--color1) selection:text-white">
       <SideNavBox
         activeSection={activeSection}
         setActiveSection={setActiveSection}

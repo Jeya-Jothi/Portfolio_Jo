@@ -14,7 +14,7 @@ export default function SideNavBox({ activeSection, setActiveSection }) {
 
   return (
     <>
-      <aside className="hidden md:flex h-screen md:flex-col md:justify-between sticky top-0 p-3 lg:p-5 rounded-xl shadow-2xl selection:bg-(--color1) selection:text-white">
+      <aside className="hidden md:flex h-screen md:flex-col md:justify-between sticky top-0 p-3 lg:p-5 rounded-xl shadow-2xl">
         <div>
           {/* Image */}
           <div className="flex justify-center">

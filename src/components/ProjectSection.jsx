@@ -12,13 +12,13 @@ export default function ProjectSection({ gitLink, liveLink, onGallery }) {
   const [selectedProject, setSelectedProject] = useState(null);
 
   return (
-    <section className="p-5 md:p-10 lg:p-15 2xl:px-25 selection:bg-(--color1) selection:text-white">
+    <section className="p-5 md:p-10 lg:p-15 2xl:px-25">
       {/* Page Title */}
       <div className="mb-10 lg:mb-20 flex justify-center flex-col items-center">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
           My <span className="text-(--color1)">Projects</span>
         </h2>
-        <p className="text-gray-600 mt-4 text-sm text-center xl:text-xl">
+        <p className="text-gray-600 mt-4 text-sm text-center xl:text-lg">
           A collection of projects that showcase my skills in frontend
           development, UI design, and problem-solving.
         </p>
