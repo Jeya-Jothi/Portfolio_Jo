@@ -1,7 +1,7 @@
 import { FaGithub, FaLinkedin, FaPhoneAlt } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
 import { MdEmail, MdLocationOn } from "react-icons/md";
-import HoverPopup from "./HoverPopup";
+import ContactForm from "./ContactForm";
 
 export default function Contact() {
   return (
@@ -24,58 +24,7 @@ export default function Contact() {
           <div className="absolute blur-3xl inset-0  rounded-2xl bg-pink-100 shadow-xl shadow-pink-200/50"></div>
 
           {/* glass card */}
-          <form
-            className="relative p-8 rounded-3xl
-            bg-white/50 backdrop-blur-md
-            border-2 border-white  space-y-5"
-          >
-            {/* Name */}
-            <div>
-              <label className="text-sm text-gray-600">Name</label>
-              <input
-                type="text"
-                placeholder="Your name"
-                className="mt-1 w-full px-4 py-3 rounded-xl
-            bg-white/70 border border-pink-100
-            focus:outline-none focus:ring-2 focus:ring-(--color1)/40"
-              />
-            </div>
-
-            {/* Email */}
-            <div>
-              <label className="text-sm text-gray-600">Email</label>
-              <input
-                type="email"
-                placeholder="your@email.com"
-                className="mt-1 w-full px-4 py-3 rounded-xl
-            bg-white/70 border border-pink-100
-            focus:outline-none focus:ring-2 focus:ring-(--color1)/40"
-              />
-            </div>
-
-            {/* Message */}
-            <div>
-              <label className="text-sm text-gray-600">Message</label>
-              <textarea
-                rows={4}
-                placeholder="Your message..."
-                className="mt-1 w-full px-4 py-3 rounded-xl
-            bg-white/70 border border-pink-100
-            focus:outline-none focus:ring-2 focus:ring-(--color1)/40"
-              ></textarea>
-            </div>
-
-            {/* Button */}
-            <button
-              type="submit"
-              className="w-full py-3 rounded-xl
-          bg-(--color1) text-white font-medium
-          shadow-lg hover:scale-[1.02] active:scale-[0.98]
-          transition"
-            >
-              Send Message
-            </button>
-          </form>
+          <ContactForm />
         </div>
         {/* Info */}
         <div className="space-y-5 mt-10 mx-10 lg:mx-20">
@@ -140,7 +89,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <HoverPopup />
     </section>
   );
 }
@@ -152,7 +100,7 @@ function SocialIcon({ icon: Icon, link, tooltip }) {
       target={link.startsWith("http") ? "_blank" : undefined}
       rel={link.startsWith("http") ? "noopener noreferrer" : undefined}
       className="p-3 rounded-full bg-white/60 backdrop-blur-md
-      border border-white shadow-md shadow-pink-400/40 hover:scale-110 transition
+      border border-white shadow-md shadow-pink-400/40 transition
       relative group "
     >
       {/* Icon */}
