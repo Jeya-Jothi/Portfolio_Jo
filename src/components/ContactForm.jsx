@@ -172,7 +172,6 @@ export default function ContactForm() {
           {loading ? "Submitting..." : "Send Message"}
         </button>
       </form>
-      ;
     </>
   );
 }
