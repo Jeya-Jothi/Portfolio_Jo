@@ -51,7 +51,7 @@ function MobileIntro() {
 export default function AboutSection() {
   return (
     <>
-      <div className="p-5 lg:p-10 md:pr-10 lg:pr-20 flex flex-col gap-8 md:gap-12 lg:gap-20 md:mx-5 xl:mx-15">
+      <div className="p-5 lg:p-10 flex flex-col gap-8 md:gap-12 lg:gap-20 md:mx-5 xl:mx-15">
         <div className="md:hidden">
           <MobileIntro />
         </div>
