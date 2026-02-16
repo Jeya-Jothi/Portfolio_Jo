@@ -6,6 +6,13 @@ import HealthCareIcon from "../assets/projects/icons/healthcare.webp";
 import TigerChickenIcon from "../assets/projects/icons/tigerchicken.webp";
 import NewcastleIcon from "../assets/projects/icons/newcastle.webp";
 import GtgIcon from "../assets/projects/icons/gtg.webp";
+import PlayNFTIcon from "../assets/projects/icons/playNFT.webp";
+
+// Play NFT
+import playNFT1 from "../assets/projects/gallery/playNFT/playNFT1.webp";
+import playNFT2 from "../assets/projects/gallery/playNFT/playNFT2.webp";
+import playNFT3 from "../assets/projects/gallery/playNFT/playNFT3.webp";
+import playNFT4 from "../assets/projects/gallery/playNFT/playNFT4.webp";
 
 // Newcastle gallery
 import newCastle1 from "../assets/projects/gallery/newcastle/newcastle1.webp";
@@ -221,6 +228,24 @@ const projects = [
       newCastle6,
       newCastle7,
     ],
+  },
+  {
+    id: 9,
+    title: "Play NFT – Digital Art Marketplace UI",
+    description: (
+      <>
+        Designed and developed a modern NFT exploration interface using
+        <strong> React</strong> with reusable components and a{" "}
+        <strong>mobile-first responsive layout</strong>. Implemented smooth
+        scroll-based animations using <strong>Framer Motion</strong>, optimized
+        image rendering, and focused on clean UI, accessibility, and
+        performance. Successfully built and deployed as a live project.
+      </>
+    ),
+    image: PlayNFTIcon,
+    tech: ["React", "JavaScript", "Tailwind CSS", "Framer Motion"],
+    liveLink: "https://play-nft-e07i.onrender.com",
+    gallery: [playNFT1, playNFT2, playNFT3, playNFT4],
   },
 ];
 
