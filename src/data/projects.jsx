@@ -245,6 +245,7 @@ const projects = [
     image: PlayNFTIcon,
     tech: ["React", "JavaScript", "Tailwind CSS", "Framer Motion"],
     liveLink: "https://play-nft-e07i.onrender.com",
+    gitLink: "https://github.com/Jeya-Jothi/Play-NFT",
     gallery: [playNFT1, playNFT2, playNFT3, playNFT4],
   },
 ];
