@@ -123,43 +123,48 @@ export default function AboutSection() {
               <p>
                 I'm a passionate{" "}
                 <span className="font-bold text-(--color1)">
-                  {" "}
-                  Frontend Developer{" "}
+                  Frontend Developer
                 </span>{" "}
-                who loves turning ideas into clean, responsive, and
-                user-friendly web experiences. I come from an Electronics and
-                Communication Engineering background, but my curiosity for
-                building things on the web led me into frontend development.
-                Over time, I’ve gained hands-on experience through an internship
-                and{" "}
-                <span className="font-bold"> multiple real-world projects</span>
-                , where I worked with{" "}
-                <span className="font-bold text-(--color1)">
-                  HTML, CSS, JavaScript, React.js, Tailwind CSS, APIs,
-                </span>{" "}
-                and <span className="font-bold text-(--color1)">Git</span>.
-              </p>{" "}
-              <p className="mt-5">
-                {" "}
-                I enjoy creating interfaces that are not only visually appealing
-                but also functional and accessible. I pay close attention to UI
-                details, responsiveness, and performance. I believe good design
-                should feel simple, intuitive, and purposeful. Currently, I’m
-                focused on strengthening my React skills, improving my
-                JavaScript fundamentals, and learning
-                <span className="font-bold"> modern frontend </span> best
-                practices.{" "}
-              </p>
-              <p className="mt-5">
-                I’m a continuous learner who enjoys solving problems, exploring
-                new technologies, and growing as a developer every day. I’m
-                actively looking for opportunities as a{" "}
-                <span className="font-bold text-(--color1)">
-                  {" "}
-                  Junior Frontend / Web Developer{" "}
+                who enjoys turning ideas into clean, responsive, and
+                user-friendly web applications. I graduated in{" "}
+                <span className="font-bold">
+                  Electronics and Communication Engineering
                 </span>
-                , where I can contribute, learn from experienced teams, and
-                build meaningful digital products.
+                , but my passion for building on the web led me into frontend
+                development. Through my internship at{" "}
+                <span className="font-bold">TechnoHacks</span>, my current role
+                at <span className="font-bold">Growify India</span>, and
+                multiple real-world projects, I've gained hands-on experience
+                with{" "}
+                <span className="font-bold text-(--color1)">
+                  React.js, Next.js, JavaScript, TypeScript, HTML, CSS, Tailwind
+                  CSS, REST APIs, Git, and Figma.
+                </span>
+              </p>
+
+              <p className="mt-5">
+                I enjoy building reusable components, translating designs into
+                pixel-perfect interfaces, and creating applications that are
+                responsive, accessible, and performant. At Growify India, I've
+                contributed to{" "}
+                <span className="font-bold">production-ready websites</span>{" "}
+                while collaborating with developers to deliver scalable features
+                and maintain clean, reusable code.
+              </p>
+
+              <p className="mt-5">
+                I'm a continuous learner who enjoys solving problems, exploring
+                new technologies, and growing as a developer every day. I'm
+                currently strengthening my knowledge of{" "}
+                <span className="font-bold">
+                  React, Next.js, TypeScript, and modern frontend architecture
+                </span>
+                . I'm actively looking for opportunities as a{" "}
+                <span className="font-bold text-(--color1)">
+                  Frontend / React Developer
+                </span>{" "}
+                where I can contribute, learn from experienced teams, and build
+                impactful digital products.
               </p>
             </div>
           </div>

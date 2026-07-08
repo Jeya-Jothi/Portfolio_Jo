@@ -1,27 +1,52 @@
 import {
   FaReact,
+  FaJs,
   FaHtml5,
   FaCss3Alt,
-  FaJs,
+  FaBootstrap,
   FaGitAlt,
   FaGithub,
-  FaBootstrap,
   FaFigma,
 } from "react-icons/fa";
-import { SiTailwindcss, SiPostman, SiJquery } from "react-icons/si";
+
+import { TbApi } from "react-icons/tb";
+
+import {
+  SiNextdotjs,
+  SiTypescript,
+  SiTailwindcss,
+  SiMui,
+  SiRedux,
+  SiPostman,
+  SiVite,
+  SiNpm,
+} from "react-icons/si";
 
 const skills = [
+  // Frontend
   { icon: FaReact, label: "React.js" },
-  { icon: FaJs, label: "JavaScript (ES6)" },
+  { icon: SiNextdotjs, label: "Next.js" },
+  { icon: SiTypescript, label: "TypeScript" },
+  { icon: FaJs, label: "JavaScript (ES6+)" },
   { icon: FaHtml5, label: "HTML5" },
   { icon: FaCss3Alt, label: "CSS3" },
   { icon: SiTailwindcss, label: "Tailwind CSS" },
   { icon: FaBootstrap, label: "Bootstrap" },
-  { icon: SiJquery, label: "jQuery" },
+  { icon: SiMui, label: "Material UI" },
+  { icon: SiRedux, label: "Redux" },
+
+  // APIs & Tools
+  { icon: TbApi, label: "REST APIs" },
+  { icon: SiPostman, label: "Postman" },
   { icon: FaGitAlt, label: "Git" },
   { icon: FaGithub, label: "GitHub" },
-  { icon: SiPostman, label: "Postman" },
-  { icon: FaFigma, label: "Figma (Basics)" },
+
+  // Design
+  { icon: FaFigma, label: "Figma" },
+
+  // Others
+  { icon: SiVite, label: "Vite" },
+  { icon: SiNpm, label: "NPM" },
 ];
 
 export default function SkillsMarquee() {

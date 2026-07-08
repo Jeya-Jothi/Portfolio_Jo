@@ -7,6 +7,8 @@ import TigerChickenIcon from "../assets/projects/icons/tigerchicken.webp";
 import NewcastleIcon from "../assets/projects/icons/newcastle.webp";
 import GtgIcon from "../assets/projects/icons/gtg.webp";
 import PlayNFTIcon from "../assets/projects/icons/playNFT.webp";
+import AcademiaFlowIcon from "../assets/projects/icons/academiaFlow.svg";
+import GrowifyHrmIcon from "../assets/projects/icons/hrm.svg";
 
 // Play NFT
 import playNFT1 from "../assets/projects/gallery/playNFT/playNFT1.webp";
@@ -66,6 +68,21 @@ import qrcode6 from "../assets/projects/gallery/qrcode/qrcode6.webp";
 // YouTube clone
 import youtube1 from "../assets/projects/gallery/youtube/youtube1.webp";
 import youtube2 from "../assets/projects/gallery/youtube/youtube2.webp";
+
+// Academia Flow gallery
+import academiaFlow1 from "../assets/projects/gallery/academiaflow/academiaflow1.webp";
+import academiaFlow2 from "../assets/projects/gallery/academiaflow/academiaflow2.webp";
+import academiaFlow3 from "../assets/projects/gallery/academiaflow/academiaflow3.webp";
+import academiaFlow4 from "../assets/projects/gallery/academiaflow/academiaflow4.webp";
+import academiaFlow5 from "../assets/projects/gallery/academiaflow/academiaflow5.webp";
+
+// Growify HRM gallery
+import growifyHrm1 from "../assets/projects/gallery/growifyhrm/growifyhrm1.webp";
+import growifyHrm2 from "../assets/projects/gallery/growifyhrm/growifyhrm2.webp";
+import growifyHrm3 from "../assets/projects/gallery/growifyhrm/growifyhrm3.webp";
+import growifyHrm4 from "../assets/projects/gallery/growifyhrm/growifyhrm4.webp";
+import growifyHrm5 from "../assets/projects/gallery/growifyhrm/growifyhrm5.webp";
+import growifyHrm6 from "../assets/projects/gallery/growifyhrm/growifyhrm6.webp";
 
 const projects = [
   {
@@ -218,7 +235,6 @@ const projects = [
     ),
     image: NewcastleIcon,
     tech: ["React", "JavaScript", "Tailwind CSS"],
-    liveLink: "https://zyppyit.com/newcastle/",
     gallery: [
       newCastle1,
       newCastle2,
@@ -247,6 +263,54 @@ const projects = [
     liveLink: "https://play-nft-e07i.onrender.com",
     gitLink: "https://github.com/Jeya-Jothi/Play-NFT",
     gallery: [playNFT1, playNFT2, playNFT3, playNFT4],
+  },
+  {
+    id: 10,
+    title: "Academia Flow – School Management Platform",
+    description: (
+      <>
+        Designed and built a landing page from scratch for a{" "}
+        <strong>school management platform</strong> using{" "}
+        <strong>Next.js, TypeScript, and Tailwind CSS</strong>, with{" "}
+        <strong>Express.js</strong> on the backend. Focused on a clean,
+        responsive layout and clear presentation of the platform's core features
+        for prospective schools and parents.
+      </>
+    ),
+    image: AcademiaFlowIcon,
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Express.js"],
+    liveLink: "https://academiaflow.growifyindia.com/",
+    gallery: [
+      academiaFlow1,
+      academiaFlow2,
+      academiaFlow3,
+      academiaFlow4,
+      academiaFlow5,
+    ],
+  },
+  {
+    id: 11,
+    title: "Growify HRM – HR Management Dashboard",
+    description: (
+      <>
+        Designed and built a landing page from scratch for{" "}
+        <strong>Growify HRM</strong>, an HR management system, using{" "}
+        <strong>React, Next.js, and TypeScript</strong>. Implemented a fully{" "}
+        <strong>responsive layout</strong> with modern, clean UI focused on
+        clearly communicating the product's dashboard modules and features.
+      </>
+    ),
+    image: GrowifyHrmIcon,
+    tech: ["React", "Next.js", "TypeScript"],
+    liveLink: "https://hrm.growifyindia.com/",
+    gallery: [
+      growifyHrm1,
+      growifyHrm2,
+      growifyHrm3,
+      growifyHrm4,
+      growifyHrm5,
+      growifyHrm6,
+    ],
   },
 ];
 

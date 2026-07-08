@@ -1,13 +1,20 @@
 const experience = [
   {
-    company: "ZyppyIT",
+    company: "Growify India",
     role: "Front-End Developer",
-    duration: "Aug 2025 – Present",
-    tech: ["React", "Tailwind CSS", "REST APIs", "Git"],
+    duration: "Mar 2026 – Present",
+    tech: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "REST APIs",
+      "Git",
+    ],
     highlights: [
       <>
-        Engineered and maintained <strong>15+</strong> client-facing,
-        production-ready pages with a focus on performance and accessibility.
+        Developed and delivered <strong>2+</strong> live, production-ready
+        websites with responsive and scalable UI.
       </>,
       <>
         Built reusable component systems that improved team velocity and reduced

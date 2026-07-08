@@ -1,0 +1,1957 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+.gitignore
+eslint.config.js
+index.html
+package.json
+public/jothi logo.png
+public/Resume - Jeya Jothi.pdf
+README.md
+src/App.css
+src/App.jsx
+src/assets/gif/common loader.gif
+src/assets/gif/Half moon.gif
+src/assets/icons/contact icon.png
+src/assets/icons/creativity.webp
+src/assets/icons/experience icon.png
+src/assets/icons/github icon.png
+src/assets/icons/Hi icon.png
+src/assets/icons/home icon.png
+src/assets/icons/jothi logo.png
+src/assets/icons/linkedin icon.png
+src/assets/icons/mail icon.png
+src/assets/icons/new tech.webp
+src/assets/icons/problem solve.webp
+src/assets/icons/project icon.png
+src/assets/icons/UI icon.webp
+src/assets/image/illustration.webp
+src/assets/image/jothi-photo-white.jpg
+src/assets/image/jothi-photo.jpg
+src/assets/image/laptop.webp
+src/assets/projects/gallery/gtg/gtg1.webp
+src/assets/projects/gallery/gtg/gtg2.webp
+src/assets/projects/gallery/gtg/gtg3.webp
+src/assets/projects/gallery/gtg/gtg4.webp
+src/assets/projects/gallery/gtg/gtg5.webp
+src/assets/projects/gallery/gtg/gtg6.webp
+src/assets/projects/gallery/healthcare/healthcare1.webp
+src/assets/projects/gallery/newcastle/newcastle1.webp
+src/assets/projects/gallery/newcastle/newcastle2.webp
+src/assets/projects/gallery/newcastle/newcastle3.webp
+src/assets/projects/gallery/newcastle/newcastle4.webp
+src/assets/projects/gallery/newcastle/newcastle5.webp
+src/assets/projects/gallery/newcastle/newcastle6.webp
+src/assets/projects/gallery/newcastle/newcastle7.webp
+src/assets/projects/gallery/pixelbloom/pixelbloom1.webp
+src/assets/projects/gallery/pixelbloom/pixelbloom2.webp
+src/assets/projects/gallery/pixelbloom/pixelbloom3.webp
+src/assets/projects/gallery/playNFT/playNFT1.webp
+src/assets/projects/gallery/playNFT/playNFT2.webp
+src/assets/projects/gallery/playNFT/playNFT3.webp
+src/assets/projects/gallery/playNFT/playNFT4.webp
+src/assets/projects/gallery/pokemon/pokemon1.webp
+src/assets/projects/gallery/pokemon/pokemon2.webp
+src/assets/projects/gallery/pokemon/pokemon3.webp
+src/assets/projects/gallery/pokemon/pokemon4.webp
+src/assets/projects/gallery/qrcode/qrcode1.webp
+src/assets/projects/gallery/qrcode/qrcode2.webp
+src/assets/projects/gallery/qrcode/qrcode3.webp
+src/assets/projects/gallery/qrcode/qrcode4.webp
+src/assets/projects/gallery/qrcode/qrcode5.webp
+src/assets/projects/gallery/qrcode/qrcode6.webp
+src/assets/projects/gallery/tigerchicken/tigerchicken1.webp
+src/assets/projects/gallery/tigerchicken/tigerchicken2.webp
+src/assets/projects/gallery/tigerchicken/tigerchicken3.webp
+src/assets/projects/gallery/tigerchicken/tigerchicken4.webp
+src/assets/projects/gallery/tigerchicken/tigerchicken5.webp
+src/assets/projects/gallery/tigerchicken/tigerchicken6.webp
+src/assets/projects/gallery/tigerchicken/tigerchicken7.webp
+src/assets/projects/gallery/tigerchicken/tigerchicken8.webp
+src/assets/projects/gallery/youtube/youtube1.webp
+src/assets/projects/gallery/youtube/youtube2.webp
+src/assets/projects/icons/gtg.webp
+src/assets/projects/icons/healthcare.webp
+src/assets/projects/icons/newcastle.webp
+src/assets/projects/icons/PixelBloom.webp
+src/assets/projects/icons/playNFT.webp
+src/assets/projects/icons/pokecard.webp
+src/assets/projects/icons/QRCode.webp
+src/assets/projects/icons/tigerchicken.webp
+src/assets/projects/icons/YouTube.webp
+src/components/AboutSection.jsx
+src/components/CommonLoader.jsx
+src/components/Contact.jsx
+src/components/ContactForm.jsx
+src/components/Experience.jsx
+src/components/GalleryModal.jsx
+src/components/Preloader.jsx
+src/components/ProjectSection.jsx
+src/components/SideNavBox.jsx
+src/components/SkillsMarquee.jsx
+src/data/experience.jsx
+src/data/interests.js
+src/data/projects.jsx
+src/index.css
+src/main.jsx
+src/pages/Home.jsx
+vite.config.js
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path=".gitignore">
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+</file>
+
+<file path="eslint.config.js">
+import js from '@eslint/js'
+import globals from 'globals'
+import reactHooks from 'eslint-plugin-react-hooks'
+import reactRefresh from 'eslint-plugin-react-refresh'
+import { defineConfig, globalIgnores } from 'eslint/config'
+
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{js,jsx}'],
+    extends: [
+      js.configs.recommended,
+      reactHooks.configs.flat.recommended,
+      reactRefresh.configs.vite,
+    ],
+    languageOptions: {
+      ecmaVersion: 2020,
+      globals: globals.browser,
+      parserOptions: {
+        ecmaVersion: 'latest',
+        ecmaFeatures: { jsx: true },
+        sourceType: 'module',
+      },
+    },
+    rules: {
+      'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
+    },
+  },
+])
+</file>
+
+<file path="src/App.css">
+
+</file>
+
+<file path="src/App.jsx">
+import { lazy, Suspense, useEffect, useState } from "react";
+
+const Preloader = lazy(() => import("./components/Preloader.jsx"));
+const Home = lazy(() => import("./pages/Home.jsx"));
+
+function App() {
+  const [showLoader, setShowLoader] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowLoader(false);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  return (
+    <Suspense fallback={null}>{showLoader ? <Preloader /> : <Home />}</Suspense>
+  );
+}
+
+export default App;
+</file>
+
+<file path="src/components/CommonLoader.jsx">
+import loaderGif from "../assets/gif/common loader.gif";
+
+export default function CommonLoader() {
+  return (
+    <div className="w-full h-screen flex items-center justify-center">
+      <img src={loaderGif} alt="Loading..." />
+    </div>
+  );
+}
+</file>
+
+<file path="src/components/GalleryModal.jsx">
+import { useEffect, useRef } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+import { IoClose } from "react-icons/io5";
+
+import "swiper/css";
+import "swiper/css/pagination";
+
+export default function GalleryModal({ project, onClose }) {
+  const swiperRef = useRef(null);
+  // ESC key close
+  useEffect(() => {
+    const handleEsc = (e) => e.key === "Escape" && onClose();
+    window.addEventListener("keydown", handleEsc);
+    return () => window.removeEventListener("keydown", handleEsc);
+  }, [onClose]);
+
+  // BODY SCROLL LOCK
+  useEffect(() => {
+    const originalStyle = window.getComputedStyle(document.body).overflow;
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = originalStyle;
+    };
+  }, []);
+
+  // STOP SWIPER AUTOPLAY WHEN CLOSED
+  useEffect(() => {
+    return () => {
+      swiperRef.current?.autoplay?.stop();
+    };
+  }, []);
+
+  if (!project) return null;
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center px-4 bg-white/1 backdrop-blur-xs">
+      {/* Glass Modal */}
+      <div className="relative w-full max-w-7xl rounded-2xl bg-white border border-gray-200 shadow-lg p-6 ">
+        {/* Desktop Close */}
+        <button
+          onClick={onClose}
+          className="hidden md:flex absolute top-4 right-4 text-black text-3xl hover:scale-110 transition"
+        >
+          <IoClose />
+        </button>
+
+        {/* Title */}
+        <h3 className="text-(--color1) text-xl font-semibold mb-4">
+          {project.title}
+        </h3>
+
+        {/* Swiper */}
+        <Swiper
+          onSwiper={(swiper) => (swiperRef.current = swiper)}
+          modules={[Autoplay, Pagination]}
+          autoplay={{ delay: 2500, disableOnInteraction: false }}
+          loop
+          pagination={{ clickable: true }}
+          className="gallery-swiper rounded-xl overflow-hidden"
+        >
+          {project.gallery.map((img, i) => (
+            <SwiperSlide key={i}>
+              <img
+                src={img}
+                alt=""
+                className="w-full h-[30vh] md:h-[50vh] lg:h-[70vh] object-contain mx-auto"
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+
+        {/* Mobile Close */}
+        <button
+          onClick={onClose}
+          className="md:hidden mt-6 w-full py-3 rounded-xl bg-white text-gray-900 font-medium"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  );
+}
+</file>
+
+<file path="src/components/Preloader.jsx">
+import HalfMoon from "../assets/gif/Half moon.gif";
+
+export default function Preloader() {
+  return (
+    <>
+      <div className="flex justify-center items-center h-screen">
+        <img src={HalfMoon} alt="Loading..." />
+      </div>
+    </>
+  );
+}
+</file>
+
+<file path="src/components/SkillsMarquee.jsx">
+import {
+  FaReact,
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaGitAlt,
+  FaGithub,
+  FaBootstrap,
+  FaFigma,
+} from "react-icons/fa";
+import { SiTailwindcss, SiPostman, SiJquery } from "react-icons/si";
+
+const skills = [
+  { icon: FaReact, label: "React.js" },
+  { icon: FaJs, label: "JavaScript (ES6)" },
+  { icon: FaHtml5, label: "HTML5" },
+  { icon: FaCss3Alt, label: "CSS3" },
+  { icon: SiTailwindcss, label: "Tailwind CSS" },
+  { icon: FaBootstrap, label: "Bootstrap" },
+  { icon: SiJquery, label: "jQuery" },
+  { icon: FaGitAlt, label: "Git" },
+  { icon: FaGithub, label: "GitHub" },
+  { icon: SiPostman, label: "Postman" },
+  { icon: FaFigma, label: "Figma (Basics)" },
+];
+
+export default function SkillsMarquee() {
+  return (
+    <div className="relative overflow-hidden">
+      {/* Fade edges */}
+      <div className="pointer-events-none absolute left-0 top-0 h-full w-10 xl:w-20 bg-linear-to-r from-white to-transparent z-10" />
+      <div className="pointer-events-none absolute right-0 top-0 h-full w-10 xl:w-20 bg-linear-to-l from-white to-transparent z-10" />
+
+      {/* OUTER TRACK */}
+      <div className="marquee">
+        {/* INNER MOVING STRIP */}
+        <div className="marquee-inner">
+          <MarqueeRow skills={skills} />
+          <MarqueeRow skills={skills} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function MarqueeRow({ skills }) {
+  return (
+    <div className="flex gap-5 xl:gap-10 pr-5 xl:pr-10 py-3">
+      {skills.map((skill, index) => (
+        <div
+          key={index}
+          className="flex items-center gap-3 px-4 py-3 rounded-xl bg-white/70 backdrop-blur-md shadow-sm whitespace-nowrap"
+        >
+          <skill.icon className="text-2xl text-(--color1)" />
+          <span className="text-sm lg:text-base font-medium text-gray-700">
+            {skill.label}
+          </span>
+        </div>
+      ))}
+    </div>
+  );
+}
+</file>
+
+<file path="src/data/experience.jsx">
+const experience = [
+  {
+    company: "ZyppyIT",
+    role: "Front-End Developer",
+    duration: "Aug 2025 – Present",
+    tech: ["React", "Tailwind CSS", "REST APIs", "Git"],
+    highlights: [
+      <>
+        Engineered and maintained <strong>15+</strong> client-facing,
+        production-ready pages with a focus on performance and accessibility.
+      </>,
+      <>
+        Built reusable component systems that improved team velocity and reduced
+        UI duplication across projects.
+      </>,
+      <>
+        Translated client requirements into scalable interfaces while meeting
+        tight sprint timelines.
+      </>,
+      <>
+        Partnered with senior developers to enhance architecture quality and
+        long-term maintainability.
+      </>,
+    ],
+  },
+  {
+    company: "TechnoHacks",
+    role: "Web Developer Intern",
+    duration: "May 2025 - Jun 2025",
+    tech: ["HTML", "CSS", "JavaScript", "Git"],
+    highlights: [
+      <>
+        Developed responsive UI modules that worked seamlessly across devices
+        and screen resolutions.
+      </>,
+      <>
+        Implemented interactive features to improve usability and engagement.
+      </>,
+      <>
+        Collaborated in feature integration, testing, and deployment for live
+        applications.
+      </>,
+    ],
+  },
+];
+
+export default experience;
+</file>
+
+<file path="src/data/interests.js">
+import UIIcon from "../assets/icons/UI icon.webp";
+import NewTechIcon from "../assets/icons/new tech.webp";
+import ProblemSolveIcon from "../assets/icons/problem solve.webp";
+import CreativityIcon from "../assets/icons/creativity.webp";
+
+const interests = [
+  {
+    title: "Frontend UI Design",
+    description:
+      "I enjoy crafting clean, intuitive user interfaces and experimenting with layouts, typography, and color systems.",
+    icon: UIIcon,
+  },
+  {
+    title: "Learning New Technologies",
+    description:
+      "I actively explore modern frontend tools and frameworks to stay up to date with evolving web standards.",
+    icon: NewTechIcon,
+  },
+  {
+    title: "Problem Solving",
+    description:
+      "I enjoy breaking down complex problems into simple, logical solutions through code.",
+    icon: ProblemSolveIcon,
+  },
+  {
+    title: "Creative Design",
+    description:
+      "I like finding design inspiration and turning creative ideas into functional digital experiences.",
+    icon: CreativityIcon,
+  },
+];
+
+export default interests;
+</file>
+
+<file path="src/main.jsx">
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import './index.css'
+import App from './App.jsx'
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)
+</file>
+
+<file path="vite.config.js">
+import { defineConfig } from "vite";
+import tailwindcss from "@tailwindcss/vite";
+import react from "@vitejs/plugin-react";
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react(), tailwindcss()],
+});
+</file>
+
+<file path="index.html">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="/jothi logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeya Jothi - Portfolio</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+</file>
+
+<file path="package.json">
+{
+  "name": "jothi_portfolio",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@tailwindcss/vite": "^4.1.18",
+    "framer-motion": "^12.23.26",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-icon": "^1.0.0",
+    "react-icons": "^5.5.0",
+    "swiper": "^12.1.0",
+    "tailwindcss": "^4.1.18"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "vite": "^7.2.4"
+  }
+}
+</file>
+
+<file path="src/components/ContactForm.jsx">
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
+
+export default function ContactForm() {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const [errors, setErrors] = useState({});
+
+  const [loading, setLoading] = useState(false);
+  const [toast, setToast] = useState(null); // success | error
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+
+    setForm({ ...form, [name]: value });
+
+    // remove error while typing
+    if (errors[name]) {
+      setErrors({ ...errors, [name]: "" });
+    }
+  };
+
+  const validate = () => {
+    const newErrors = {};
+
+    if (!form.name.trim()) newErrors.name = "Please enter your name";
+    if (!form.email.trim()) newErrors.email = "Please enter your email";
+    if (!form.message.trim()) newErrors.message = "Please enter your message";
+
+    setErrors(newErrors);
+
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const showToast = (type) => {
+    setToast(type);
+    setTimeout(() => setToast(null), 5000);
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (!validate()) return;
+
+    // Validation
+    if (!form.name || !form.email || !form.message) {
+      showToast("error");
+      return;
+    }
+
+    try {
+      setLoading(true);
+
+      await emailjs.send(
+        "service_b8ifpyn",
+        "template_vznstwd",
+        {
+          user_name: form.name,
+          user_email: form.email,
+          message: form.message,
+        },
+        "Db-XrDjCq4uH1GPoE",
+      );
+
+      // Success
+      showToast("success");
+
+      // Clear form
+      setForm({
+        name: "",
+        email: "",
+        message: "",
+      });
+    } catch (err) {
+      showToast("error");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return (
+    <>
+      {/* ================= Toast ================= */}
+      {toast && (
+        <div
+          className={`fixed top-6 right-6 px-6 py-3 rounded-xl shadow-lg text-white z-50
+          ${toast === "success" ? "bg-green-500" : "bg-red-500"}`}
+        >
+          {toast === "success"
+            ? "Message sent successfully!"
+            : "Something went wrong!"}
+        </div>
+      )}
+      <form
+        onSubmit={handleSubmit}
+        className="relative p-8 rounded-3xl
+            bg-white/50 backdrop-blur-md
+            border-2 border-white  space-y-5"
+      >
+        {/* Name */}
+        <div>
+          <label className="text-sm text-gray-600">Name</label>
+          <input
+            name="name"
+            value={form.name}
+            onChange={handleChange}
+            type="text"
+            placeholder="Your name"
+            className={`mt-1 w-full px-4 py-3 rounded-xl
+            bg-white/70 border
+            ${errors.name ? "border-red-400" : "border-pink-100"}
+            focus:outline-none focus:ring-2 focus:ring-(--color1)/40`}
+          />
+          {errors.name && (
+            <p className="text-red-500 text-xs mt-1">{errors.name}</p>
+          )}
+        </div>
+
+        {/* Email */}
+        <div>
+          <label className="text-sm text-gray-600">Email</label>
+          <input
+            name="email"
+            value={form.email}
+            onChange={handleChange}
+            type="email"
+            placeholder="your@email.com"
+            className={`mt-1 w-full px-4 py-3 rounded-xl
+            bg-white/70 border
+            ${errors.email ? "border-red-400" : "border-pink-100"}
+            focus:outline-none focus:ring-2 focus:ring-(--color1)/40`}
+          />
+
+          {errors.email && (
+            <p className="text-red-500 text-xs mt-1">{errors.email}</p>
+          )}
+        </div>
+
+        {/* Message */}
+        <div>
+          <label className="text-sm text-gray-600">Message</label>
+          <textarea
+            name="message"
+            value={form.message}
+            onChange={handleChange}
+            rows={4}
+            placeholder="Your message..."
+            className={`mt-1 w-full px-4 py-3 rounded-xl
+            bg-white/70 border
+            ${errors.message ? "border-red-400" : "border-pink-100"}
+            focus:outline-none focus:ring-2 focus:ring-(--color1)/40`}
+          />
+
+          {errors.message && (
+            <p className="text-red-500 text-xs mt-1">{errors.message}</p>
+          )}
+        </div>
+
+        {/* Button */}
+        <button
+          disabled={loading}
+          type="submit"
+          className="w-full py-3 rounded-xl
+          bg-(--color1) text-white font-medium
+          shadow-lg hover:scale-[1.02] active:scale-[0.98]
+          transition disabled:opacity-70"
+        >
+          {loading ? "Submitting..." : "Send Message"}
+        </button>
+      </form>
+    </>
+  );
+}
+</file>
+
+<file path="src/components/Experience.jsx">
+import experience from "../data/experience";
+
+export default function Experience() {
+  return (
+    <section className="p-5 md:p-10 lg:p-15 2xl:px-25 mb-20">
+      {/* Title */}
+      <h1 className="text-3xl md:text-4xl font-bold text-center">
+        Professional <span className="text-(--color1)">Experience</span>
+      </h1>
+      <p className="text-gray-600 mt-4 mb-10 text-sm text-center xl:text-lg">
+        Working with teams to ship quality
+      </p>
+
+      <div className="space-y-12">
+        {experience.map((item, index) => (
+          <ExperienceCard key={index} {...item} />
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function ExperienceCard({ company, role, duration, highlights, tech }) {
+  return (
+    <div className="relative">
+      {/* Company Glass Tag */}
+      <div className="mb-5 flex justify-center">
+        <div className="relative inline-block">
+          {/* shadow */}
+          <div className="absolute inset-0 translate-x-0 translate-y-2 shadow-md shadow-pink-100 bg-pink-200/50 rounded-3xl"></div>
+
+          {/* glass */}
+          <div
+            className="relative px-5 py-2 rounded-3xl
+      bg-white/50 backdrop-blur-md border border-white shadow-sm shadow-white"
+          >
+            <p className="text-(--color1) font-semibold text-center">
+              {company}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Card */}
+      <div
+        className="bg-pink-50/60 rounded-4xl border border-pink-100
+        shadow-lg p-5 md:p-8 mx-5 lg:mx-20 xl:mx-30 2xl:mx-50"
+      >
+        {/* Header */}
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+          <h2 className="text-xl md:text-2xl font-bold text-(--color1)">
+            {role}
+          </h2>
+
+          <span className="text-xs lg:text-sm w-fit font-medium px-4 py-1 rounded-full bg-white shadow-sm">
+            {duration}
+          </span>
+        </div>
+
+        {/* Divider */}
+        <div className="w-20 h-1 bg-(--color1)/30 rounded-full my-5"></div>
+
+        {/* Highlights */}
+        <ul className="space-y-4 text-gray-700 leading-relaxed">
+          {highlights.map((point, i) => (
+            <li className="flex items-start gap-3">
+              <span className="mt-2 w-2 h-2 bg-(--color1) rounded-full flex-shrink-0"></span>
+              <span>{point}</span>
+            </li>
+          ))}
+        </ul>
+
+        {/* Tech */}
+        <div className="flex flex-wrap gap-2 mt-6">
+          {tech.map((t, i) => (
+            <span
+              key={i}
+              className="text-xs px-3 py-1 rounded-full bg-white shadow-sm text-(--color1) font-medium"
+            >
+              {t}
+            </span>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+</file>
+
+<file path="README.md">
+# Jeya Jothi - Portfolio
+
+A modern, responsive developer portfolio showcasing my projects, skills, and experience.  
+Designed with a clean UI, smooth interactions, and performance-focused architecture.
+
+## Live link: https://jeya-jothi-portfolio.onrender.com
+
+## Features
+
+- Responsive layout (mobile-first)
+- Project showcase with live & GitHub links
+- Glassmorphism gallery modal with image slider
+- Auto-looping project galleries using Swiper
+- Clean UI with subtle animations
+- Accessible & keyboard-friendly interactions
+
+## Tech Stack
+
+- React
+- Tailwind CSS
+- JavaScript (ES6+)
+- Swiper.js
+- React Icons
+
+## Projects
+
+Each project includes:
+
+- Description & tech stack
+- Live preview & source code
+- Image gallery popup with smooth transitions
+
+## Getting Started
+
+```bash
+git clone https://github.com/Jeya-Jothi/Portfolio_Jo.git
+cd Portfolio_Jo
+npm install
+npm run dev
+```
+</file>
+
+<file path="src/components/Contact.jsx">
+import { FaGithub, FaLinkedin, FaPhoneAlt } from "react-icons/fa";
+import { HiDownload } from "react-icons/hi";
+import { MdEmail, MdLocationOn } from "react-icons/md";
+import ContactForm from "./ContactForm";
+
+export default function Contact() {
+  return (
+    <section className="p-5 md:p-10 lg:p-15 2xl:px-25 mb-20 lg:mb-10">
+      {/* Title */}
+      <div className="text-center mb-12">
+        <h1 className="text-3xl font-bold">
+          Get In <span className="text-(--color1)">Touch</span>
+        </h1>
+        <p className="text-gray-500 mt-2">
+          Let’s build something great together
+        </p>
+      </div>
+
+      {/* Layout */}
+      <div className="flex flex-col gap-10 items-center mt-10 md:mt-20">
+        {/* Form */}
+        <div className="relative w-full md:w-lg xl:w-2xl">
+          {/* shadow layer */}
+          <div className="absolute blur-3xl inset-0  rounded-2xl bg-pink-100 shadow-xl shadow-pink-200/50"></div>
+
+          {/* glass card */}
+          <ContactForm />
+        </div>
+        {/* Info */}
+        <div className="space-y-5 mt-10 mx-10 lg:mx-20">
+          <h2 className="text-xl font-semibold text-center text-gray-700">
+            Open to opportunities
+          </h2>
+
+          <p className="text-gray-500 text-sm md:text-base text-justify">
+            I enjoy crafting clean, user-friendly interfaces and working with
+            teams that value quality and scalability. If you have a role — I'd
+            love to hear from you.
+          </p>
+
+          <div className="text-sm">
+            <div className="flex flex-col md:flex-row gap-5 justify-between items-center">
+              {/* Location */}
+
+              <p className="text-gray-500 flex gap-2 items-center">
+                <MdLocationOn className="text-2xl text-(--color1)" />
+                <span className="xl:text-lg">Tenkasi, Tamil Nadu, India</span>
+              </p>
+
+              {/* Resume Download */}
+              <a
+                href="/Resume - Jeya Jothi.pdf" // file in public folder
+                download
+                className="inline-flex items-center gap-2 px-4 py-4 rounded-xl
+                bg-(--color1) text-white font-medium shadow-md
+                hover:scale-105 active:scale-95 transition"
+              >
+                Download Resume
+                <HiDownload className="text-lg" />
+              </a>
+            </div>
+
+            {/* Social / Contact Icons */}
+            <div className="flex items-center justify-center gap-5 lg:gap-10 mt-10">
+              <SocialIcon
+                icon={FaGithub}
+                link="https://github.com/Jeya-Jothi"
+                tooltip="Explore my code"
+              />
+
+              <SocialIcon
+                icon={FaLinkedin}
+                link="https://www.linkedin.com/in/jeya-jothi-841277211/"
+                tooltip="Connect on Linkedin"
+              />
+
+              <SocialIcon
+                icon={MdEmail}
+                link="mailto:jeyajothi108@gmail.com"
+                tooltip="Send an email"
+              />
+
+              <SocialIcon
+                icon={FaPhoneAlt}
+                link="tel:+91 8270907155"
+                tooltip="Let’s talk"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function SocialIcon({ icon: Icon, link, tooltip }) {
+  return (
+    <a
+      href={link}
+      target={link.startsWith("http") ? "_blank" : undefined}
+      rel={link.startsWith("http") ? "noopener noreferrer" : undefined}
+      className="p-3 rounded-full bg-white/60 backdrop-blur-md
+      border border-white shadow-md shadow-pink-400/40 transition
+      relative group "
+    >
+      {/* Icon */}
+      <Icon
+        className="text-xl lg:text-2xl text-(--color1) relative z-10 
+      group-hover:text-white transition-all duration-500"
+      />
+
+      {/* Fill Animation */}
+      <div
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+        rounded-full w-5 h-5 bg-(--color1)
+        opacity-0 group-hover:opacity-100
+        group-hover:w-full group-hover:h-full
+        transition-all duration-500"
+      />
+
+      {/* Tooltip */}
+      <p
+        className="absolute top-15 left-1/2 -translate-x-1/2 text-nowrap py-2 px-4 shadow rounded-xl text-xs opacity-0 
+      pointer-events-none group-hover:opacity-100 transition-all duration-500"
+      >
+        {tooltip}
+      </p>
+    </a>
+  );
+}
+</file>
+
+<file path="src/data/projects.jsx">
+import PixelBloomIcon from "../assets/projects/icons/PixelBloom.webp";
+import QRCodeIcon from "../assets/projects/icons/QRCode.webp";
+import YouTubeIcon from "../assets/projects/icons/YouTube.webp";
+import PokeCArdIcon from "../assets/projects/icons/pokecard.webp";
+import HealthCareIcon from "../assets/projects/icons/healthcare.webp";
+import TigerChickenIcon from "../assets/projects/icons/tigerchicken.webp";
+import NewcastleIcon from "../assets/projects/icons/newcastle.webp";
+import GtgIcon from "../assets/projects/icons/gtg.webp";
+import PlayNFTIcon from "../assets/projects/icons/playNFT.webp";
+
+// Play NFT
+import playNFT1 from "../assets/projects/gallery/playNFT/playNFT1.webp";
+import playNFT2 from "../assets/projects/gallery/playNFT/playNFT2.webp";
+import playNFT3 from "../assets/projects/gallery/playNFT/playNFT3.webp";
+import playNFT4 from "../assets/projects/gallery/playNFT/playNFT4.webp";
+
+// Newcastle gallery
+import newCastle1 from "../assets/projects/gallery/newcastle/newcastle1.webp";
+import newCastle2 from "../assets/projects/gallery/newcastle/newcastle2.webp";
+import newCastle3 from "../assets/projects/gallery/newcastle/newcastle3.webp";
+import newCastle4 from "../assets/projects/gallery/newcastle/newcastle4.webp";
+import newCastle5 from "../assets/projects/gallery/newcastle/newcastle5.webp";
+import newCastle6 from "../assets/projects/gallery/newcastle/newcastle6.webp";
+import newCastle7 from "../assets/projects/gallery/newcastle/newcastle7.webp";
+
+// Tiger chicken & Ribs
+import tigerChicken1 from "../assets/projects/gallery/tigerchicken/tigerchicken1.webp";
+import tigerChicken2 from "../assets/projects/gallery/tigerchicken/tigerchicken2.webp";
+import tigerChicken3 from "../assets/projects/gallery/tigerchicken/tigerchicken3.webp";
+import tigerChicken4 from "../assets/projects/gallery/tigerchicken/tigerchicken4.webp";
+import tigerChicken5 from "../assets/projects/gallery/tigerchicken/tigerchicken5.webp";
+import tigerChicken6 from "../assets/projects/gallery/tigerchicken/tigerchicken6.webp";
+import tigerChicken7 from "../assets/projects/gallery/tigerchicken/tigerchicken7.webp";
+import tigerChicken8 from "../assets/projects/gallery/tigerchicken/tigerchicken8.webp";
+
+// GTG
+import gtg1 from "../assets/projects/gallery/gtg/gtg1.webp";
+import gtg2 from "../assets/projects/gallery/gtg/gtg2.webp";
+import gtg3 from "../assets/projects/gallery/gtg/gtg3.webp";
+import gtg4 from "../assets/projects/gallery/gtg/gtg4.webp";
+import gtg5 from "../assets/projects/gallery/gtg/gtg5.webp";
+import gtg6 from "../assets/projects/gallery/gtg/gtg6.webp";
+
+// Pokemon
+import pokemon1 from "../assets/projects/gallery/pokemon/pokemon1.webp";
+import pokemon2 from "../assets/projects/gallery/pokemon/pokemon2.webp";
+import pokemon3 from "../assets/projects/gallery/pokemon/pokemon3.webp";
+import pokemon4 from "../assets/projects/gallery/pokemon/pokemon4.webp";
+
+// Healthcare
+import healthcare1 from "../assets/projects/gallery/healthcare/healthcare1.webp";
+
+// Pixelbloom
+import pixelBloom1 from "../assets/projects/gallery/pixelbloom/pixelbloom1.webp";
+import pixelBloom2 from "../assets/projects/gallery/pixelbloom/pixelbloom2.webp";
+import pixelBloom3 from "../assets/projects/gallery/pixelbloom/pixelbloom3.webp";
+
+// QR Code
+import qrcode1 from "../assets/projects/gallery/qrcode/qrcode1.webp";
+import qrcode2 from "../assets/projects/gallery/qrcode/qrcode2.webp";
+import qrcode3 from "../assets/projects/gallery/qrcode/qrcode3.webp";
+import qrcode4 from "../assets/projects/gallery/qrcode/qrcode4.webp";
+import qrcode5 from "../assets/projects/gallery/qrcode/qrcode5.webp";
+import qrcode6 from "../assets/projects/gallery/qrcode/qrcode6.webp";
+
+// YouTube clone
+import youtube1 from "../assets/projects/gallery/youtube/youtube1.webp";
+import youtube2 from "../assets/projects/gallery/youtube/youtube2.webp";
+
+const projects = [
+  {
+    id: 1,
+    title: "Youtube Clone",
+    description: (
+      <>
+        A responsive UI clone of the YouTube homepage built using{" "}
+        <strong>HTML and CSS</strong>. Features video cards, search layout, and
+        adaptive design across devices. Demonstrates strong layout,
+        responsiveness, and UI fundamentals.
+      </>
+    ),
+    image: YouTubeIcon,
+    tech: ["HTML", "CSS"],
+    liveLink: "https://jeya-jothi.github.io/YouTube-clone/",
+    gitLink: "https://github.com/Jeya-Jothi/YouTube-clone",
+    gallery: [youtube1, youtube2],
+  },
+  {
+    id: 2,
+    title: "QR Code Image Generator",
+    description: (
+      <>
+        A lightweight web application that generates downloadable QR code images
+        from user-provided URLs. Built with a clean, minimal UI and simple
+        backend support using <strong>Express.js</strong>, focusing on fast
+        response, usability, and practical real-world functionality.
+      </>
+    ),
+    image: QRCodeIcon,
+    tech: ["HTML", "CSS", "Express.js"],
+    liveLink: "https://qr-code-generator-64vs.onrender.com/",
+    gitLink: "https://github.com/Jeya-Jothi/QR-Code-Generator",
+    gallery: [qrcode1, qrcode2, qrcode3, qrcode4, qrcode5, qrcode6],
+  },
+  {
+    id: 3,
+    title: "PixelBloom - HD Image Search App",
+    description: (
+      <>
+        {" "}
+        A responsive image search application built with <strong>
+          React
+        </strong>{" "}
+        and the <strong>Pixabay API</strong>. Users can search, preview, and
+        download high-quality images through a clean, mobile-first UI. Focused
+        on performance, usability, and real-world API integration.
+      </>
+    ),
+    image: PixelBloomIcon,
+    tech: ["React", "JavaScript", "REST API"],
+    liveLink: "https://pixelbloom.onrender.com",
+    gitLink: "https://github.com/Jeya-Jothi/PixelBloom-React.js",
+    gallery: [pixelBloom1, pixelBloom2, pixelBloom3],
+  },
+  {
+    id: 4,
+    title: "Healthcare Dashboard – Static UI Project",
+    description: (
+      <>
+        Built a responsive healthcare dashboard UI using{" "}
+        <strong>React.js</strong>, based on a professional design mockup.
+        Implemented sidebar navigation, calendar slots, schedule cards, activity
+        charts, and a body map using{" "}
+        <strong>CSS Grid, Flexbox, and media queries</strong>, with a strong
+        focus on clean layout and mobile responsiveness. Site is not fully
+        responsive yet.
+      </>
+    ),
+    image: HealthCareIcon,
+    tech: ["React", "JavaScript"],
+    liveLink: "https://healthcare-dashboard-react.onrender.com",
+    gitLink: "https://github.com/Jeya-Jothi/Healthcare-dashboard-React",
+    gallery: [healthcare1],
+  },
+  {
+    id: 5,
+    title: "Pokémon Explorer",
+    description: (
+      <>
+        Developed a Pokémon Explorer web app using <strong>React</strong> and{" "}
+        <strong>PokéAPI</strong>, enabling search by name and filtering by type.
+        Implemented a feature-based component structure, handled async API calls
+        with loading and error states, styled the UI using modular CSS.
+      </>
+    ),
+    image: PokeCArdIcon,
+    tech: ["React", "JavaScript", "REST API"],
+    liveLink: "https://pokemon-explorer-k43t.onrender.com/",
+    gitLink: "https://github.com/Jeya-Jothi/Pokemon-Explorer",
+    gallery: [pokemon1, pokemon2, pokemon3, pokemon4],
+  },
+  {
+    id: 6,
+    title: "GTG Perfume – Product Landing Page",
+    description: (
+      <>
+        Built a modern, fully responsive product landing page from a{" "}
+        <strong>Figma design</strong> using{" "}
+        <strong>HTML, CSS, and Vanilla JavaScript</strong>. Focused on
+        pixel-perfect UI implementation, smooth interactions, and clean frontend
+        structure without relying on frameworks.
+      </>
+    ),
+    image: GtgIcon,
+    tech: ["HTML", "CSS", "JavaScript"],
+    liveLink: "https://jeya-jothi.github.io/GTG_Perfume_Project",
+    gitLink: "https://github.com/Jeya-Jothi/GTG_Perfume_Project",
+    gallery: [gtg1, gtg2, gtg3, gtg4, gtg5, gtg6],
+  },
+  {
+    id: 7,
+    title: "Tiger Chicken & Ribs – Client Website",
+    description: (
+      <>
+        Worked on a live client website as a <strong>Frontend Developer</strong>
+        , contributing to UI development and responsive design using{" "}
+        <strong>React, HTML, CSS, Tailwind CSS and JavaScript</strong>. Built
+        and updated reusable components, implemented mobile-friendly layouts,
+        and collaborated with the team to deliver a clean, user-focused
+        interface for production use.
+      </>
+    ),
+    image: TigerChickenIcon,
+    tech: ["React", "JavaScript", "Tailwind CSS"],
+    liveLink: "https://www.tigerchickenandribs.ca/",
+    gallery: [
+      tigerChicken1,
+      tigerChicken2,
+      tigerChicken3,
+      tigerChicken4,
+      tigerChicken5,
+      tigerChicken6,
+      tigerChicken7,
+      tigerChicken8,
+    ],
+  },
+  {
+    id: 8,
+    title: "Newcastle Griddle – Client Website",
+    description: (
+      <>
+        Designed and developed a fully responsive restaurant website using
+        <strong> React</strong>, with reusable components and a{" "}
+        <strong>mobile-first layout</strong>. Focused on clean UI, smooth
+        navigation, and performance optimization. Successfully delivered and
+        deployed as a live client project.
+      </>
+    ),
+    image: NewcastleIcon,
+    tech: ["React", "JavaScript", "Tailwind CSS"],
+    liveLink: "https://zyppyit.com/newcastle/",
+    gallery: [
+      newCastle1,
+      newCastle2,
+      newCastle3,
+      newCastle4,
+      newCastle5,
+      newCastle6,
+      newCastle7,
+    ],
+  },
+  {
+    id: 9,
+    title: "Play NFT – Digital Art Marketplace UI",
+    description: (
+      <>
+        Designed and developed a modern NFT exploration interface using
+        <strong> React</strong> with reusable components and a{" "}
+        <strong>mobile-first responsive layout</strong>. Implemented smooth
+        scroll-based animations using <strong>Framer Motion</strong>, optimized
+        image rendering, and focused on clean UI, accessibility, and
+        performance. Successfully built and deployed as a live project.
+      </>
+    ),
+    image: PlayNFTIcon,
+    tech: ["React", "JavaScript", "Tailwind CSS", "Framer Motion"],
+    liveLink: "https://play-nft-e07i.onrender.com",
+    gitLink: "https://github.com/Jeya-Jothi/Play-NFT",
+    gallery: [playNFT1, playNFT2, playNFT3, playNFT4],
+  },
+];
+
+export default projects;
+</file>
+
+<file path="src/index.css">
+@import "tailwindcss";
+
+/* Utility font class */
+* {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+:root {
+  --color1: #d10034b9;
+}
+
+@keyframes pulseColorVar {
+  0% {
+    background-color: color-mix(in srgb, var(--color1) 40%, white);
+  }
+  50% {
+    background-color: var(--color1);
+  }
+  100% {
+    background-color: color-mix(in srgb, var(--color1) 40%, white);
+  }
+}
+
+.animate-color-pulse {
+  animation: pulseColorVar 2.5s ease-in-out infinite;
+}
+
+@keyframes inkFlow {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 0% 200%;
+  }
+}
+
+.animate-ink-flow {
+  background: linear-gradient(
+    to bottom,
+    color-mix(in srgb, var(--color1) 80%, white),
+    color-mix(in srgb, var(--color1) 50%, white),
+    color-mix(in srgb, var(--color1) 15%, white),
+    color-mix(in srgb, var(--color1) 50%, white),
+    color-mix(in srgb, var(--color1) 80%, white)
+  );
+  background-size: 100% 200%;
+  animation: inkFlow 5s ease-in-out infinite;
+}
+
+.gallery-swiper .swiper-pagination {
+  bottom: -5px !important; /* increase/decrease as needed */
+}
+
+.gallery-swiper .swiper-pagination-bullet {
+  background-color: #c0294fb9;
+}
+
+.gallery-swiper .swiper-pagination-bullet-active {
+  background-color: #d10034b9;
+}
+
+/* ===== Seamless Skills Marquee ===== */
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee-inner {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 25s linear infinite;
+}
+
+.marquee-inner:hover {
+  animation-play-state: paused;
+}
+
+/* ===== Custom Scrollbar ===== */
+.custom-scrollbar {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #d1003473 transparent;
+}
+
+/* Chrome / Edge / Safari */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: var(--color1);
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: color-mix(in srgb, var(--color1), black 15%);
+}
+</file>
+
+<file path="src/components/ProjectSection.jsx">
+import projects from "../data/projects.jsx";
+import GalleryModal from "./GalleryModal.jsx";
+
+import { useState } from "react";
+import { FaGithub } from "react-icons/fa";
+import { HiOutlineExternalLink } from "react-icons/hi";
+
+import { HiOutlinePhotograph } from "react-icons/hi";
+
+export default function ProjectSection({ gitLink, liveLink, onGallery }) {
+  const reverseProjects = [...projects].reverse();
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  return (
+    <section className="p-5 md:p-10 lg:p-15 2xl:px-25 mb-20 md:mb-5">
+      {/* Page Title */}
+      <div className="mb-10 lg:mb-20 flex justify-center flex-col items-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+          My <span className="text-(--color1)">Projects</span>
+        </h2>
+        <p className="text-gray-600 mt-4 text-sm text-center xl:text-lg">
+          A collection of projects that showcase my skills in frontend
+          development, UI design, and problem-solving.
+        </p>
+      </div>
+
+      {/* Projects Grid */}
+      <div className="grid gap-8 xl:gap-12 2xl:gap-20 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 px-5 lg:px-0">
+        {reverseProjects.map((project) => (
+          <div
+            key={project.id}
+            className="relative flex flex-col justify-between bg-white rounded-2xl border border-pink-100
+             shadow-pink-100 shadow-md  hover:shadow-lg transition-all duration-300 p-6"
+          >
+            {/* Project Image */}
+            <div className="absolute -top-6 -right-6 bg-white flex items-center justify-center w-20 h-20 rounded-full border border-pink-50 shadow-md overflow-hidden">
+              <img
+                src={project.image}
+                alt={project.title}
+                className="object-contain p-3"
+              />
+            </div>
+
+            {/* Content */}
+            <div>
+              <h3 className="text-xl font-semibold text-(--color1) mb-2 pr-8">
+                {project.title}
+              </h3>
+
+              <p className="text-gray-600 leading-relaxed mb-4">
+                {project.description}
+              </p>
+            </div>
+
+            {/* Tech Stack */}
+            <div className="flex justify-between gap-3 border-t pt-5 border-t-pink-100">
+              <div className="flex flex-wrap gap-2">
+                {project.tech.map((item, index) => (
+                  <span
+                    key={index}
+                    className="text-xs px-3 py-1 rounded-full bg-pink-50 text-(--color1) font-medium"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+              <div className="flex items-center gap-3 text-xl text-gray-700">
+                {/* GitHub */}
+                {project.gitLink && (
+                  <ActionIcon
+                    icon={FaGithub}
+                    tooltip="View code"
+                    link={project.gitLink}
+                  />
+                )}
+
+                {/* Live Site */}
+                {project.liveLink && (
+                  <ActionIcon
+                    icon={HiOutlineExternalLink}
+                    tooltip="View live site"
+                    link={project.liveLink}
+                  />
+                )}
+
+                {/* Gallery */}
+                <ActionIcon
+                  icon={HiOutlinePhotograph}
+                  tooltip="View gallery"
+                  onClick={() => setSelectedProject(project)}
+                />
+              </div>
+              <GalleryModal
+                project={selectedProject}
+                onClose={() => setSelectedProject(null)}
+              />
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function ActionIcon({ icon: Icon, tooltip, link, onClick }) {
+  const isDisabled = !link && !onClick;
+  const Wrapper = link ? "a" : "button";
+
+  return (
+    <Wrapper
+      href={link}
+      target={link ? "_blank" : undefined}
+      rel={link ? "noopener noreferrer" : undefined}
+      onClick={isDisabled ? undefined : onClick}
+      disabled={isDisabled}
+      className={`relative group cursor-pointer transition
+        ${
+          isDisabled
+            ? "text-gray-300 cursor-not-allowed"
+            : "hover:text-(--color1) transition duration-300"
+        }
+      `}
+    >
+      <Icon />
+
+      {!isDisabled && (
+        <span className="absolute opacity-0 group-hover:opacity-100 pointer-events-none text-black bg-white text-xs text-nowrap -left-6 top-8 p-2 shadow-lg rounded-2xl transition">
+          {tooltip}
+        </span>
+      )}
+    </Wrapper>
+  );
+}
+</file>
+
+<file path="src/components/SideNavBox.jsx">
+import JothiPhoto from "../assets/image/jothi-photo.jpg";
+import JothiPhotoWhite from "../assets/image/jothi-photo-white.jpg";
+import JothiLogo from "../assets/icons/jothi logo.png";
+
+import HomeIcon from "../assets/icons/home icon.png";
+import ExperienceIcon from "../assets/icons/experience icon.png";
+import ProjectIcon from "../assets/icons/project icon.png";
+import ContactIcon from "../assets/icons/contact icon.png";
+
+export default function SideNavBox({ activeSection, setActiveSection }) {
+  const navItemClass = (section) =>
+    `py-4 w-full text-center rounded-xl cursor-pointer transition
+     ${activeSection === section ? "bg-(--color1)/20" : "hover:bg-red-50"}`;
+
+  return (
+    <>
+      <aside className="hidden md:flex h-screen md:flex-col md:justify-between sticky top-0 p-3 lg:p-5 rounded-xl shadow-2xl">
+        <div>
+          {/* Image */}
+          <div className="flex justify-center">
+            <div className="relative h-40 lg:h-50 xl:h-55 2xl:h-65 w-full group">
+              {/* Normal Image */}
+              <img
+                src={JothiPhoto}
+                alt="Profile"
+                className="absolute inset-0 h-full w-full object-cover rounded-2xl border-3 border-gray-200
+                       transition-opacity duration-900 group-hover:opacity-0"
+              />
+
+              {/* Hover Image */}
+              <img
+                src={JothiPhotoWhite}
+                alt="Profile Hover"
+                className="absolute inset-0 h-full w-full object-cover rounded-2xl border-3 border-gray-200
+                       opacity-0 transition-opacity duration-900 group-hover:opacity-100"
+              />
+            </div>
+          </div>
+          {/* Name */}
+          <div className="flex flex-col items-center justify-center">
+            <p className="text-(--color1) font-bold text-lg">Jeya Jothi</p>
+            <p className="text-sm lg:text-base text-center">
+              Frontend Developer
+            </p>
+          </div>
+
+          {/* Nav icons */}
+          <div className="mt-10">
+            <ul className="flex flex-col items-center gap-2">
+              <button
+                className={navItemClass("about")}
+                onClick={() => setActiveSection("about")}
+              >
+                About Me
+              </button>
+
+              <button
+                className={navItemClass("projects")}
+                onClick={() => setActiveSection("projects")}
+              >
+                Projects
+              </button>
+
+              <button
+                className={navItemClass("experience")}
+                onClick={() => setActiveSection("experience")}
+              >
+                Experience
+              </button>
+              <button
+                className={navItemClass("contact")}
+                onClick={() => setActiveSection("contact")}
+              >
+                Contact
+              </button>
+            </ul>
+          </div>
+        </div>
+
+        <div className="flex items-center justify-between">
+          <img src={JothiLogo} alt="Logo" className="w-10 h-10" />
+          <p className="text-xs xl:text-sm text-gray-500 text-right">
+            &copy; {new Date().getFullYear()} | All rights reserved
+          </p>
+        </div>
+      </aside>
+
+      {/* Mobile nav bottom */}
+      <aside className="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t-2 border-pink-200 shadow-lg z-50 selection:bg-(--color1) selection:text-white">
+        <ul className="flex justify-between">
+          <button
+            className={`p-3 w-full flex flex-col items-center justify-center gap-1 border-t-2 border-transparent ${
+              activeSection === "about"
+                ? "bg-(--color1)/10  border-t-(--color1)"
+                : ""
+            }`}
+            onClick={() => setActiveSection("about")}
+          >
+            <img src={HomeIcon} alt="" className="w-5" />{" "}
+            <span className="text-sm">Home</span>
+          </button>
+          <button
+            className={`p-3 w-full flex flex-col items-center justify-center gap-1  border-t-2 border-transparent ${
+              activeSection === "projects"
+                ? "bg-(--color1)/10 border-t-(--color1)"
+                : ""
+            }`}
+            onClick={() => setActiveSection("projects")}
+          >
+            <img src={ProjectIcon} alt="" className="w-5" />
+            <span className="text-sm">Projects</span>
+          </button>
+          <button
+            className={`p-3 w-full flex flex-col items-center justify-center gap-1 border-t-2 border-transparent ${
+              activeSection === "experience"
+                ? "bg-(--color1)/10 border-t-(--color1)"
+                : ""
+            }`}
+            onClick={() => setActiveSection("experience")}
+          >
+            <img src={ExperienceIcon} alt="" className="w-5" />
+            <span className="text-sm">Experience</span>
+          </button>
+
+          <button
+            className={`p-3 w-full flex flex-col items-center justify-center gap-1 border-t-2 border-transparent ${
+              activeSection === "contact"
+                ? "bg-(--color1)/10 border-t-(--color1)"
+                : ""
+            }`}
+            onClick={() => setActiveSection("contact")}
+          >
+            <img src={ContactIcon} alt="" className="w-5" />
+            <span className="text-sm">Contact</span>
+          </button>
+        </ul>
+      </aside>
+    </>
+  );
+}
+</file>
+
+<file path="src/components/AboutSection.jsx">
+import HiIcon from "../assets/icons/Hi icon.png";
+import LinkedinIcon from "../assets/icons/linkedin icon.png";
+import GithubIcon from "../assets/icons/github icon.png";
+import MailIcon from "../assets/icons/mail icon.png";
+
+import illustration from "../assets/image/laptop.webp";
+import JothiPhotoWhite from "../assets/image/jothi-photo-white.jpg";
+
+import SkillsMarquee from "./SkillsMarquee";
+
+import interests from "../data/interests";
+
+function Tooltip({ text }) {
+  return (
+    <span
+      className="absolute left-1/2 top-full mt-2 -translate-x-1/2
+                 whitespace-nowrap text-xs bg-white shadow-md
+                 rounded-md px-2 py-1 opacity-0 scale-50
+                 transition-all duration-500
+                 group-hover:opacity-100 group-hover:scale-100 pointer-events-none"
+    >
+      {text}
+    </span>
+  );
+}
+
+function MobileIntro() {
+  return (
+    <div className="flex justify-between items-center">
+      <div className="w-40 h-40">
+        <img
+          src={JothiPhotoWhite}
+          alt=""
+          className="w-full h-full object-cover rounded-2xl"
+        />
+      </div>
+      <div className="flex flex-col justify-center items-center gap-1">
+        <div className="flex items-center justify-center">
+          <p className="text-sm">Hi...</p>
+          <img src={HiIcon} alt="Hi icon" className="w-4 h-3 mb-1" />
+        </div>
+        <p className="text-2xl text-center">
+          I'm <span className="text-(--color1) font-bold">Jeya Jothi</span>
+        </p>
+        <p className="text-sm text-center">Frontend Developer</p>
+      </div>
+    </div>
+  );
+}
+
+export default function AboutSection() {
+  return (
+    <>
+      <div className="p-5 lg:p-10 flex flex-col gap-8 md:gap-12 lg:gap-20 md:mx-5 xl:mx-15">
+        <div className="md:hidden">
+          <MobileIntro />
+        </div>
+
+        {/* Header */}
+        <div className="hidden md:flex flex-col items-center">
+          <div className="flex items-center gap-1">
+            <p className="text-base lg:text-xl">Hi...</p>
+            <img src={HiIcon} alt="Hi icon" className="w-4 lg:w-5 h-3 lg:h-4" />
+          </div>
+          <p className="text-2xl lg:text-4xl mt-2">
+            I'm <span className="text-(--color1) font-bold">Jeya Jothi</span>
+          </p>
+          {/* Social media */}
+          <div className="flex gap-5 text-sm lg:text-lg mt-5">
+            {/* LinkedIn */}
+            <div className="relative flex items-center gap-2 pr-5 border-r border-(--color1) group">
+              <img src={LinkedinIcon} alt="" className="w-5 h-5" />
+              <a
+                href="https://www.linkedin.com/in/jeya-jothi-841277211"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative"
+              >
+                LinkedIn
+                <Tooltip text="Connect with me on LinkedIn" />
+              </a>
+            </div>
+
+            {/* GitHub */}
+            <div className="relative flex items-center gap-2 pr-5 border-r border-(--color1) group">
+              <img src={GithubIcon} alt="" className="w-5 h-5" />
+              <a
+                href="https://github.com/Jeya-Jothi"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative"
+              >
+                GitHub
+                <Tooltip text="View my GitHub repositories" />
+              </a>
+            </div>
+
+            {/* Email */}
+            <div className="relative flex items-center gap-2 group">
+              <img src={MailIcon} alt="" className="w-5 h-4" />
+              <a href="mailto:jeyajothi108@gmail.com" className="relative">
+                jeyajothi108@gmail.com
+                <Tooltip text="Send me an email" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* About me content */}
+        <div className="flex flex-col gap-5">
+          <div className="flex items-center gap-2 lg:gap-5">
+            <div className="w-2 h-10 lg:h-15 animate-ink-flow rounded-2xl"></div>
+            <h3 className="text-2xl lg:text-4xl font-bold">About Me</h3>
+          </div>
+          {/* about content + image */}
+          <div className="flex flex-col xl:flex-row items-center gap-10 2xl:gap-15">
+            <img
+              src={illustration}
+              alt=""
+              className="order-1 xl:order-2 opacity-80 w-60 xl:w-90"
+            />
+            <div className="order-2 xl:order-1 text-justify">
+              <p>
+                I'm a passionate{" "}
+                <span className="font-bold text-(--color1)">
+                  {" "}
+                  Frontend Developer{" "}
+                </span>{" "}
+                who loves turning ideas into clean, responsive, and
+                user-friendly web experiences. I come from an Electronics and
+                Communication Engineering background, but my curiosity for
+                building things on the web led me into frontend development.
+                Over time, I’ve gained hands-on experience through an internship
+                and{" "}
+                <span className="font-bold"> multiple real-world projects</span>
+                , where I worked with{" "}
+                <span className="font-bold text-(--color1)">
+                  HTML, CSS, JavaScript, React.js, Tailwind CSS, APIs,
+                </span>{" "}
+                and <span className="font-bold text-(--color1)">Git</span>.
+              </p>{" "}
+              <p className="mt-5">
+                {" "}
+                I enjoy creating interfaces that are not only visually appealing
+                but also functional and accessible. I pay close attention to UI
+                details, responsiveness, and performance. I believe good design
+                should feel simple, intuitive, and purposeful. Currently, I’m
+                focused on strengthening my React skills, improving my
+                JavaScript fundamentals, and learning
+                <span className="font-bold"> modern frontend </span> best
+                practices.{" "}
+              </p>
+              <p className="mt-5">
+                I’m a continuous learner who enjoys solving problems, exploring
+                new technologies, and growing as a developer every day. I’m
+                actively looking for opportunities as a{" "}
+                <span className="font-bold text-(--color1)">
+                  {" "}
+                  Junior Frontend / Web Developer{" "}
+                </span>
+                , where I can contribute, learn from experienced teams, and
+                build meaningful digital products.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Skills */}
+        <div className="flex flex-col gap-5">
+          <div className="flex items-center gap-2 lg:gap-5">
+            <div className="w-2 h-10 lg:h-15 animate-ink-flow rounded-2xl"></div>
+            <h3 className="text-2xl lg:text-4xl font-bold">Skills</h3>
+          </div>
+          <SkillsMarquee />
+        </div>
+
+        {/* Interests */}
+        <div className="flex flex-col gap-5">
+          <div className="flex items-center gap-2 lg:gap-5">
+            <div className="w-2 h-10 lg:h-15 animate-ink-flow rounded-2xl"></div>
+            <h3 className="text-2xl lg:text-4xl font-bold">Interests</h3>
+          </div>
+          {/* interests cards */}
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 mb-20">
+            {interests.map((item, index) => (
+              <div
+                key={index}
+                className="flex rounded-2xl border border-pink-200
+                       hover:shadow-lg transition-shadow duration-300"
+              >
+                <div className="flex items-center justify-center rounded-tl-2xl rounded-bl-2xl bg-pink-100 min-w-30">
+                  <img src={item.icon} alt="" className="w-8 md:w-10" />
+                </div>
+                <div className="p-3 lg:p-6 rounded-2xl bg-white">
+                  <h4 className="text-base md:text-lg font-semibold mb-1 md:mb-2">
+                    {item.title}
+                  </h4>
+                  <p className="text-sm md:text-base text-gray-600 leading-relaxed">
+                    {item.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
+</file>
+
+<file path="src/pages/Home.jsx">
+import { lazy, useState, Suspense, useEffect } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+
+const AboutSection = lazy(() => import("../components/AboutSection.jsx"));
+const ProjectSection = lazy(() => import("../components/ProjectSection.jsx"));
+const Experience = lazy(() => import("../components/Experience.jsx"));
+const Contact = lazy(() => import("../components/Contact.jsx"));
+const SideNavBox = lazy(() => import("../components/SideNavBox.jsx"));
+const CommonLoader = lazy(() => import("../components/CommonLoader.jsx"));
+
+export default function Home() {
+  const [activeSection, setActiveSection] = useState("about");
+  const [showLoader, setShowLoader] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowLoader(false);
+    }, 3000); // 3 seconds
+
+    return () => clearTimeout(timer);
+  }, [activeSection]);
+
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-[25%_75%] xl:grid-cols-[15%_85%] justify-between h-screen selection:bg-(--color1) selection:text-white">
+      <SideNavBox
+        activeSection={activeSection}
+        setActiveSection={setActiveSection}
+      />
+
+      <Suspense fallback={<CommonLoader />}>
+        <AnimatePresence mode="wait">
+          {showLoader ? (
+            <motion.div
+              key="loader"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="w-full"
+            >
+              <CommonLoader />
+            </motion.div>
+          ) : (
+            <motion.div
+              key={activeSection}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.4, ease: "easeInOut" }}
+              className="w-full overflow-y-scroll custom-scrollbar"
+            >
+              {activeSection === "about" && <AboutSection />}
+              {activeSection === "projects" && <ProjectSection />}
+              {activeSection === "experience" && <Experience />}
+              {activeSection === "contact" && <Contact />}
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </Suspense>
+    </div>
+  );
+}
+</file>
+
+</files>

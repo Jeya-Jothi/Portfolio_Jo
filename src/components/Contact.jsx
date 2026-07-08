@@ -49,7 +49,7 @@ export default function Contact() {
 
               {/* Resume Download */}
               <a
-                href="/Resume - Jeya Jothi.pdf" // file in public folder
+                href="/Jeya Jothi - Resume.pdf" // file in public folder
                 download
                 className="inline-flex items-center gap-2 px-4 py-4 rounded-xl
                 bg-(--color1) text-white font-medium shadow-md
