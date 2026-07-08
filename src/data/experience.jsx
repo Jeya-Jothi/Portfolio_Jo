@@ -1,7 +1,7 @@
 const experience = [
   {
     company: "Growify India",
-    role: "Front-End Developer",
+    role: "Front-End Developer Intern",
     duration: "Mar 2026 – Present",
     tech: [
       "React",
