@@ -3,8 +3,6 @@
 A modern, responsive developer portfolio showcasing my projects, skills, and experience.  
 Designed with a clean UI, smooth interactions, and performance-focused architecture.
 
-## Live link: https://jeya-jothi-portfolio.onrender.com
-
 ## Features
 
 - Responsive layout (mobile-first)
